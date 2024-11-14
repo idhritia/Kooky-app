@@ -1,0 +1,128 @@
+/* Base layout for all devices */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.card {
+  padding: 2em;
+  margin: 1em auto;
+  max-width: 90%;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Responsive adjustments */
+
+/* Small phones and portrait mode (up to 360px) */
+@media (max-width: 360px) {
+  #root {
+    padding: 1rem;
+  }
+  .logo {
+    height: 4em;
+    padding: 1em;
+  }
+  .card {
+    padding: 1.5em;
+    font-size: 0.9rem;
+  }
+  .read-the-docs {
+    font-size: 0.85rem;
+  }
+}
+
+/* Small to medium phones (up to 480px) */
+@media (max-width: 480px) {
+  #root {
+    padding: 1.5rem;
+  }
+  .logo {
+    height: 5em;
+  }
+  .card {
+    padding: 1.75em;
+    font-size: 1rem;
+  }
+}
+
+/* Larger phones and smaller tablets (up to 640px) */
+@media (max-width: 640px) {
+  #root {
+    padding: 2rem;
+  }
+  .logo {
+    height: 6em;
+  }
+  .card {
+    padding: 2em;
+    font-size: 1.1rem;
+  }
+}
+
+/* Tablets and larger screens (up to 768px) */
+@media (max-width: 768px) {
+  #root {
+    max-width: 90%;
+  }
+  .logo {
+    height: 6em;
+  }
+  .card {
+    padding: 2em;
+    font-size: 1.15rem;
+  }
+}
+
+/* Small laptops and desktops (up to 1024px) */
+@media (max-width: 1024px) {
+  #root {
+    max-width: 95%;
+  }
+  .logo {
+    height: 6.5em;
+  }
+  .card {
+    padding: 2em;
+    font-size: 1.2rem;
+  }
+}
+
+/* Larger desktops (above 1280px) */
+@media (min-width: 1281px) {
+  #root {
+    max-width: 1280px;
+    padding: 2rem;
+  }
+  .logo {
+    height: 7em;
+  }
+  .card {
+    padding: 2.5em;
+    font-size: 1.25rem;
+  }
+}
+
+/* Logo spin animation with reduced motion preference check */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
